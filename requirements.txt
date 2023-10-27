@@ -11,3 +11,4 @@ sentencepiece
 llama-index==0.7.21
 llama_hub==0.0.19
 sentence-transformers
+pydantic==1.10.9
