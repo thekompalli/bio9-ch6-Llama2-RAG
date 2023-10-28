@@ -33,7 +33,7 @@ def get_tokenizer_model():
     # Create model
     model = AutoModelForCausalLM.from_pretrained(name, cache_dir='./model/'
                             , use_auth_token=auth_token, torch_dtype=torch.float16, 
-                            rope_scaling={"type": "dynamic", "factor": 2}, load_in_8bit=True) 
+                            rope_scaling={"type": "dynamic", "factor": 2}, load_in_8bit=False) 
 
     return tokenizer, model
 tokenizer, model = get_tokenizer_model()
